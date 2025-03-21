@@ -1,7 +1,7 @@
 body {
     font-family: "Kanit";
 
-    background: linear-gradient(0deg, #bedbed 0%, #0090ff 100%);
+    background: linear-gradient(0deg, #ff9933 0%, #ffff66  100%);
 
     margin: 0 auto;
     padding: 0 4rem;
@@ -41,7 +41,7 @@ p, li {
     margin-top: 0.5rem;
 }
 
-img, iframe {
+iframe {
     border: 0.3rem solid black;
     border-radius: 12px;
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
@@ -50,11 +50,6 @@ img, iframe {
     margin-bottom: 3rem;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-img:hover {
-    transform: translate(-0.5rem, -0.5rem);
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
 }
 
 a {
@@ -98,7 +93,7 @@ a {
 }
 
 .tutorial {
-    background: linear-gradient(90deg, #ff9966 0%, #ffeb99 100%);
+    background: linear-gradient(90deg, #0066cc 0%, #0090ff 100%);
 }
 
 ::-webkit-scrollbar {
