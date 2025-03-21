@@ -3,9 +3,14 @@ body {
 
     background: linear-gradient(0deg, #bedbed 0%, #0090ff 100%);
 
-    max-width: 56rem;
     margin: 0 auto 0 auto;
     padding: 50px;
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 56rem;
+    }
 }
 
 object {
