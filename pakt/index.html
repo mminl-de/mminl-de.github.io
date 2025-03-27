@@ -2,27 +2,64 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=896, initial-scale=1.0"/>
-        <link rel="stylesheet" href="../main.css">
-        <title>Interscore</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="main.css"/>
+        <title>Pakt | mminl.de</title>
     </head>
 
     <body>
-        <center>
-            <h1>Pakt</h1>
-            <h3>A small wrapper for your favorite package manager that categorizes your packages.</h3>
-        </center>
+        <div class="section-title">
+            <div class="heading">
+                <div class="banner">
+ ____       _    _   
+|  _ \ __ _| | _| |_ 
+| |_) / _` | |/ / __|
+|  __/ (_| |   <| |_ 
+|_|   \__,_|_|\_\\__|
+                </div>
+                <h1>Categorize your packages</h1>
+                <p>A collection of POSIX-compliant shell scripts that lets you manage installed packages in categories.</p>
+                <div class="button-row">
+                    <a class="button" href="https://mminl-de.github.io/pakt">Install</a>
+                    <a class="button" href="https://github.com/mminl-de/pakt">GitHub</a>
+                </div>
+            </div>
+            <div class="code-block">
+                <div class="code">$ pakt -S git neovim clang +dev
+$ pakt-dry +dev
+dev:
+git
+neovim
+clang
+$ pakt-sync x +dev</div>
+                <div class="code decreasing-opacity">[sudo] password for user: ********
+checking dependencies...
+:: gettext optionally requires git: for autopoint
+infrastructure updates
 
-        <h2>What are categories?</h2>
-        <h2>Use Cases</h2>
-        <h2>pakt</h2>
-        <h2>pakt-sync</h2>
-        <h2>pakt-dry</h2>
-        <h2>Installation</h2>
-        <h2>Configuration</h2>
-        <h2>More Information</h2>
-        <a href="https://github.com/mminl-de/pakt">GitHub</a>
-        <!-- TODO impressum -->
-        <!-- TODO background bisschen heller machen -->
+Package (20)          Old Version  Net Change 
+
+compiler-rt           19.1.7-1      -43.92 MiB
+libluv                1.48.0_2-1     -0.18 MiB
+libvterm              0.3.3-2        -0.14 MiB
+lua51-lpeg            1.1.0-3        -0.06 MiB</div>
+            </div>
+        </div>
+
+        <div>
+            halo TODO
+        </div>
+
+        <!--TODO
+what are categories
+features (supports all package managers, mention other scripts)
+included scripts (brief about each script)
+configuration (show excerpt)
+installation (curl and github link)
+## meta
+make references to commands clickable in the code
+icons (install and github)
+make the flexbox look good
+-->
     </body>
 </html>

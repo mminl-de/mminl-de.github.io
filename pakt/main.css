@@ -1,0 +1,89 @@
+:root {
+    --background: #101010;
+    --text-color: #cecece;
+    --text-size: 18px;
+
+    --code-border: #bebebe;
+    --code-background: #181818;
+
+    --button-color-hover: yellow;
+
+    font-family: "Space";
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--background);
+
+    max-width: 1100px;
+    margin: 5rem auto;
+
+    font-size: var(--text-size);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: .5rem;
+}
+
+.section-title {
+    /*
+    background-color: green;
+    */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.heading {
+    max-width: 500px;
+    /*
+    background-color: magenta;
+    */
+}
+
+.banner {
+    font-family: "SpaceMono";
+    white-space: pre-wrap;
+}
+
+.button-row {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.button {
+    font-size: 2rem;
+    text-decoration-thickness: .5rem;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: var(--button-color-hover);
+}
+
+.code-block {
+    padding: 1rem;
+    border: 2px solid var(--code-border);
+    background-color: var(--code-background);
+}
+
+.code {
+    font-family: "SpaceMono";
+    white-space: pre-wrap;
+}
+
+.decreasing-opacity {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+@font-face {
+    font-family: "Space";
+    src: url("SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("SpaceMono-Regular.ttf") format("truetype");
+}
