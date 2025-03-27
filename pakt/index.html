@@ -18,24 +18,31 @@
 |_|   \__,_|_|\_\\__|
                 </div>
                 <h1>Categorize your packages.</h1>
-                <p>A collection of POSIX-compliant shell scripts that let you manage installed packages in categories.</p>
+                <p>A collection of POSIX-compliant shell scripts that let you manage installed Linux/UNIX packages in categories.</p>
                 <div class="button-row">
-                    <a class="button" href="https://mminl-de.github.io/pakt">Install</a>
-                    <a class="button" href="https://github.com/mminl-de/pakt">GitHub</a>
+                    <div class="button">
+                        <object data="install.svg" type="image/svg+xml"></object>
+                        <a class="install" href="https://mminl-de.github.io/pakt">Install</a>
+                    </div>
+
+                    <div class="button">
+                        <object data="github.svg" type="image/svg+xml"></object>
+                        <a class="github" href="https://github.com/mminl-de/pakt">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="code-block">
-                <div class="code">$ pakt -S git neovim clang +dev
-$ pakt-dry +dev
+                <!-- TODO HREF -->
+                <div class="code">$ <a class="shell-command" href="https://gnu.org">pakt</a> -S git neovim clang +dev
+$ <a class="shell-command" href="https://gnu.org">pakt-dry</a> +dev <!-- TODO HREF-->
 dev:
 git
 neovim
 clang
-$ pakt-sync x +dev</div>
+$ <a class="shell-command" href="https://gnu.org">pakt-sync</a> x +dev</div> <!-- TODO HREF-->
                 <div class="code decreasing-opacity">[sudo] password for user: ********
 checking dependencies...
-:: gettext optionally requires git: for autopoint
-infrastructure updates
+:: gettext optionally requires git: for autopoint infrastructure updates
 
 Package (20)          Old Version  Net Change 
 
@@ -74,6 +81,22 @@ lua51-lpeg            1.1.0-3        -0.06 MiB</div>
             <h2>Configuration</h2>
             <!-- TODO description on the left, example on the right
             maybe even show distro-specific configs with a button menu -->
+            <div class="section-configuration">
+TODO Together forever and never to part
+Together forever, we two
+And don't you know, I would move Heaven and Earth
+To be together forever with you?
+                <div class="code-block">
+                    <div class="code">DEFAULT_CATEGORIES="default"
+
+PACKAGE_MANAGER="sudo pacman"
+
+REMOVE_EMPTY_CATFILES=0
+
+# Also if you want to change the location of this config file:
+# Export PAKT_CONF_PATH to the directory (e.g. /home/user/.config/pakt) with an absolute path (without / at the end).</div>
+                </div>
+            </div>
         </div>
 
         <!--TODO

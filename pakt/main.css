@@ -1,19 +1,23 @@
 :root {
-    --background: #101010;
+    --color-background: #101010;
     --text-color: #cecece;
     --text-size: 18px;
 
     --code-border: #bebebe;
-    --code-background: #181818;
 
-    --color-button-hover: yellow;
+    --color-install: #8a8;
+    --color-code-block: #222;
+    --color-github: #777;
+    --color-hyperlink: #ffa;
+
+    --color-shell-muted: #ccc;
 
     font-family: "Space";
     color: var(--text-color);
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--color-background);
 
     max-width: 1100px;
     margin: 5rem auto;
@@ -22,29 +26,35 @@ body {
     font-size: var(--text-size);
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 3rem;
     margin-top: 1rem;
 }
 
 h2 {
-    margin-top: 4rem;
+    margin: 4rem 0 2rem 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 .section-title {
-    /*
-    background-color: green;
-    */
     display: flex;
     align-items: center;
+    gap: 1rem;
+}
+
+.section-configuration {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .heading {
     max-width: 500px;
-    /*
-    background-color: magenta;
-    */
 }
 
 .banner {
@@ -60,18 +70,33 @@ h2 {
 
 .button {
     font-size: 2rem;
-    text-decoration-thickness: .5rem;
+    border-bottom: .5rem solid;
 }
 
 .button:hover {
-    text-decoration: none;
-    background-color: var(--color-button-hover);
+    background-color: var(--color-hyperlink);
+}
+
+.button:has(.github) {
+    border-color: var(--color-github);
+}
+
+.button .github {
+    color: var(--color-github);
+}
+
+.button:has(.install) {
+    border-color: var(--color-install);
+}
+
+.button .install {
+    color: var(--color-install);
 }
 
 .code-block {
     padding: 1rem;
     border: 2px solid var(--code-border);
-    background-color: var(--code-background);
+    background-color: var(--color-code-block);
 }
 
 .code {
@@ -79,7 +104,12 @@ h2 {
     white-space: pre-wrap;
 }
 
+.shell-command:hover {
+    background-color: var(--color-hyperlink);
+}
+
 .decreasing-opacity {
+    color: var(--color-shell-muted);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
 }
 
@@ -92,7 +122,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-button-hover);
+    background: var(--color-hyperlink);
 }
 
 @media (max-width: 1032px) {
