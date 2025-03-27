@@ -6,7 +6,7 @@
     --code-border: #bebebe;
     --code-background: #181818;
 
-    --button-color-hover: yellow;
+    --color-button-hover: yellow;
 
     font-family: "Space";
     color: var(--text-color);
@@ -17,13 +17,19 @@ body {
 
     max-width: 1100px;
     margin: 5rem auto;
+    padding: 2rem;
 
     font-size: var(--text-size);
 }
 
 h1 {
     font-size: 3rem;
-    margin-top: .5rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin-top: 4rem;
+    font-size: 2rem;
 }
 
 .section-title {
@@ -31,7 +37,6 @@ h1 {
     background-color: green;
     */
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -48,7 +53,7 @@ h1 {
 }
 
 .button-row {
-    margin-top: 2rem;
+    margin: 2rem auto;
     display: flex;
     gap: 4rem;
 }
@@ -60,7 +65,7 @@ h1 {
 
 .button:hover {
     text-decoration: none;
-    background-color: var(--button-color-hover);
+    background-color: var(--color-button-hover);
 }
 
 .code-block {
@@ -76,6 +81,28 @@ h1 {
 
 .decreasing-opacity {
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-button-hover);
+}
+
+@media (max-width: 1032px) {
+    .section-title {
+        display: block;
+    }
+
+    .heading {
+        max-width: unset;
+    }
 }
 
 @font-face {
