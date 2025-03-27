@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <div class="section-title">
+        <div class="section-row">
             <div class="heading">
                 <div class="banner">
  ____       _    _   
@@ -22,7 +22,7 @@
                 <div class="button-row">
                     <div class="button">
                         <object data="install.svg" type="image/svg+xml"></object>
-                        <a class="install" href="https://mminl-de.github.io/pakt">Install</a>
+                        <a class="install" href="https://mminl-de.github.io/pakt#installation">Install</a>
                     </div>
 
                     <div class="button">
@@ -73,15 +73,10 @@ lua51-lpeg            1.1.0-3        -0.06 MiB</div>
         </div>
 
         <div class="section-categories">
-            <h2>Installation</h2>
-            <!-- TODO how to install with curl, how to install from source -->
-        </div>
-
-        <div class="section-categories">
             <h2>Configuration</h2>
             <!-- TODO description on the left, example on the right
             maybe even show distro-specific configs with a button menu -->
-            <div class="section-configuration">
+            <div class="section-row">
 TODO Together forever and never to part
 Together forever, we two
 And don't you know, I would move Heaven and Earth
@@ -96,6 +91,25 @@ REMOVE_EMPTY_CATFILES=0
 # Also if you want to change the location of this config file:
 # Export PAKT_CONF_PATH to the directory (e.g. /home/user/.config/pakt) with an absolute path (without / at the end).</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="section-categories">
+            <h2 id="installation">Installation</h2>
+            <!-- TODO how to install with curl, how to install from source -->
+            The classic way is to use the source code:
+            <div class="code-block">
+                <div class="code">git clone https://github.com/mminl-de/pakt
+cd pakt
+make install
+# # You can remove the source code afterwards
+# cd ..
+# rm -rf pakt</div>
+            </div>
+            <br>
+            But you can also install Pakt with a single cURL command:
+            <div class="code-block">
+                <div class="code">curl -LsS https://raw.githubusercontent.com/mminl-de/pakt/main/Makefile | make -f - curl-install</div>
             </div>
         </div>
 
