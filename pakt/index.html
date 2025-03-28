@@ -39,7 +39,7 @@ dev:
 git
 neovim
 clang
-$ <a class="shell-command" href="https://gnu.org">pakt-sync</a> x +dev</div> <!-- TODO HREF-->
+$ <a class="shell-command" href="https://gnu.org">pakt-sync</a> u +dev</div> <!-- TODO HREF-->
                 <div class="code decreasing-opacity">[sudo] password for user: ********
 checking dependencies...
 :: gettext optionally requires git: for autopoint infrastructure updates
@@ -59,39 +59,41 @@ lua51-lpeg            1.1.0-3        -0.06 MiB</div>
 
         <div class="section-categories">
             <h2>Features</h2>
-            <!-- TODO
-            tag each package with (multiple categories)
-            sync entire categories
-            configure package managers
-            define default categories (why though?)
-            -->
+            <div class="section-row">
+                <div class="list">
+                    <div class="list-item">
+                        <div>+</div>
+                        <div class="list-item-content">Assign each package on your system multiple categories.</div>
+                    </div>
+                    <div class="list-item">
+                        <div>+</div>
+                        <div class="list-item-content">Edit the categories in plain-text files.</div>
+                    </div>
+                    <div class="list-item">
+                        <div>+</div>
+                        <div class="list-item-content">Support for multiple package managers, even NPM and Cargo.</div>
+                    </div>
+                    <div class="list-item">
+                        <div>+</div>
+                        <div class="list-item-content">Install entire categories worth of packages.</div>
+                    </div>
+                    <div class="list-item">
+                        <div>+</div>
+                        <div class="list-item-content">Choose default categories to implicitly add packages to.</div>
+                    </div>
+                </div>
+                <div class="code-block">
+                    <div class="code">
+heheheheheheheheheheheheheheheheheheh
+hehaheheheheheheheheheheheheheheheheh
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="section-categories">
             <h2>Suite</h2>
             <!-- TODO description and code snippet for every script -->
-        </div>
-
-        <div class="section-categories">
-            <h2>Configuration</h2>
-            <!-- TODO description on the left, example on the right
-            maybe even show distro-specific configs with a button menu -->
-            <div class="section-row">
-TODO Together forever and never to part
-Together forever, we two
-And don't you know, I would move Heaven and Earth
-To be together forever with you?
-                <div class="code-block">
-                    <div class="code">DEFAULT_CATEGORIES="default"
-
-PACKAGE_MANAGER="sudo pacman"
-
-REMOVE_EMPTY_CATFILES=0
-
-# Also if you want to change the location of this config file:
-# Export PAKT_CONF_PATH to the directory (e.g. /home/user/.config/pakt) with an absolute path (without / at the end).</div>
-                </div>
-            </div>
         </div>
 
         <div class="section-categories">
@@ -102,6 +104,7 @@ REMOVE_EMPTY_CATFILES=0
                 <div class="code">git clone https://github.com/mminl-de/pakt
 cd pakt
 make install
+
 # # You can remove the source code afterwards
 # cd ..
 # rm -rf pakt</div>
@@ -121,6 +124,7 @@ make the flexbox look good
 put the resources where they belong
 consider not taking variable fonts
 make logo
+who we are
 -->
     </body>
 </html>

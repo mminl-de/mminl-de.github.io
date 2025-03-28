@@ -100,11 +100,6 @@ a {
     width: 14px;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px gray; 
-    background-color: #ffff66;
-}
-
 ::-webkit-scrollbar-thumb {
     background: #9f9f9f; 
     border: 3px solid black;
