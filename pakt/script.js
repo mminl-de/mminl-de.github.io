@@ -54,8 +54,20 @@ htop
 `
 ]
 
-const featuresTextEl = document.getElementById(`features`)
+const featuresTextEl = document.getElementById("features")
 
 function setFeaturesText(n) {
     featuresTextEl.innerHTML = featuresTexts[n]
+}
+
+const curlCommand = document.getElementById("curl-command").innerHTML
+
+function copyCurlCommand() {
+    let textArea = document.createElement("textarea")
+    textArea.value = curlCommand
+    document.body.appendChild(textArea)
+
+    textArea.select()
+    document.execCommand("copy")
+    document.body.removeChild(textArea)
 }
