@@ -131,6 +131,11 @@ h2 {
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
 }
 
+#features {
+    width: 500px;
+    height: 32rem;
+}
+
 ::-webkit-scrollbar {
     width: .5rem;
 }
