@@ -2,6 +2,12 @@
     --color-background-top: #f93;
     --color-background-bottom: #ff6;
 
+    --color-green-left: #099;
+    --color-green-right: #0f9;
+
+    --color-blue-left: #06c;
+    --color-blue-right: #09f;
+
     --color-scrollbar-thumb: #999;
     --color-scrollbar-thumb-hover: #bbb;
 
@@ -63,6 +69,30 @@ iframe {
 a {
     color: black;
     text-decoration: none;
+}
+
+.button {
+    border: 0.3rem solid black;
+    border-radius: 12px;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+
+    font-size: 2rem;
+    padding: 1rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+.green {
+    background: linear-gradient(90deg, var(--color-green-left) 0%, var(--color-green-right) 100%);
+}
+
+.blue {
+    background: linear-gradient(90deg, var(--color-blue-left) 0%, var(--color-blue-right) 100%);
 }
 
 ::-webkit-scrollbar {
