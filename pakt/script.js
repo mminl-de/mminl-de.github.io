@@ -32,7 +32,7 @@ $ pakt-dry +languages
 languages:
 typescript
 rustup
-zip
+zig
 $ pakt-sync i +languages
 <div class="code decreasing-opacity">looking for conflicting packages...
 
