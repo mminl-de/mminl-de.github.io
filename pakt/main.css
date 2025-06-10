@@ -1,16 +1,25 @@
 :root {
+    /* TODO colors
+     * red f66 categories
+     * blue 9cf commands
+     * yellow ff9 arguments
+     * green strings
+     */
+
     --color-background: #101010;
     --text-color: #cecece;
     --text-size: 18px;
 
     --code-border: #bebebe;
-
-    --color-install: #8a8;
     --color-code-block: #222;
-    --color-github: #777;
     --color-hover: #ffa;
 
-    --color-shell-muted: #ccc;
+    --color-blue: #9cf;
+    --color-gray: #777;
+    --color-green: #8a8;
+    --color-red: #f66;
+    --color-stdout: #ccc;
+    --color-yellow: #ff9;
 
     font-family: "SpaceMono";
     color: var(--text-color);
@@ -76,19 +85,19 @@ h3 {
 }
 
 .button:has(.github) {
-    border-color: var(--color-github);
+    border-color: var(--color-gray);
 }
 
 .button .github {
-    color: var(--color-github);
+    color: var(--color-gray);
 }
 
 .button:has(.install) {
-    border-color: var(--color-install);
+    border-color: var(--color-green);
 }
 
 .button .install {
-    color: var(--color-install);
+    color: var(--color-green);
 }
 
 .list {
@@ -132,7 +141,7 @@ h3 {
 }
 
 .decreasing-opacity {
-    color: var(--color-shell-muted);
+    color: var(--color-stdout);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
 }
 
